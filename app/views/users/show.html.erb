@@ -1,0 +1,6 @@
+<h1>Users#show</h1>
+<p>username: <%= @user.name %></p>
+<p>profile: <%= @user.profile %></p>
+<% if @user.avatar? %>
+  <p>icon: <%= image_tag @user.avatar.url %></p>
+<% end %>

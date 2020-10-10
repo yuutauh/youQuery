@@ -1,0 +1,8 @@
+<% posts.each do |post| %>
+  <div class="card mb-1">
+    <div class="card-body">
+        <p class="card-text"><%= link_to  post.title , post_path( post.id ), remote: true %></p>
+        <p class="card-text"><small><%= simple_format post.question %></small></p>
+    </div>
+  </div>
+<% end %>
